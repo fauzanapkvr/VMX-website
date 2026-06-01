@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us — VMX Server Solutions</title>
+  <meta name="description"
+    content="We are VMX Server Solutions—delivering enterprise-grade virtualization since 2021." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Red+Hat+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* ─── STYLE ARCHITECTURE CONFIGURATIONS ─── */
+    :root {
+      --green-primary: #60A630;
+      --green-banner-bg: #74B83E;
+      --text-dark: #1A1A1A;
+      --gray-light-bg: #FAFAFA;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #4A4A4A;
+      background-color: var(--gray-light-bg);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    .section-h {
+      font-family: 'Red Hat Display', sans-serif;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .hero-h1-huge {
+      font-size: 4.8rem;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+
+    @media (max-width: 768px) {
+      .hero-h1-huge {
+        font-size: 3rem;
+      }
+    }
+
+    /* ─── METRIC TICKER BOARD STYLING (image_e34d44.png) ─── */
+    .metric-count-heading {
+      font-family: 'Red Hat Display', sans-serif;
+      font-size: 4.5rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      line-height: 1;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+
+    .metric-count-heading span {
+      display: inline-block;
+    }
+
+    .metric-count-heading .plus-accent {
+      color: var(--green-primary);
+    }
+
+    .metric-desc-txt {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: #6C7A93;
+    }
+
+    /* ─── DYNAMIC GRAPHIC WIREFRAME BACKDROP (image_e34d25.png) ─── */
+    .asymmetric-graphic-frame {
+      border: 1px solid #E2E5E9;
+      background-color: #FFFFFF;
+      border-radius: 24px;
+      min-height: 380px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.01);
+    }
+
+    /* ─── ANIMATION TIMELINE ENGINE INTERNALS ─── */
+    .gsap-init,
+    .reveal-word,
+    .hero-sub {
+      opacity: 0;
+      will-change: transform, opacity;
+    }
+
+    .word-line {
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: top;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="blue-pill"></div>
+
+  <button class="scroll-top-btn" id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+
+    <header class="site-header sticky-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg py-3">
+        <img src="images/vmx/vmx-removebg-preview.webp" class="brand-logo w-12" alt="VMX Logo">
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-2 gap-lg-3 mt-3 mt-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="products.html">Product</a></li>
+            <li class="nav-item"><a class="nav-link" href="howitworks.html">How it Works</a></li>
+            <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="support.html">Support</a></li>
+            <li class="nav-item"><a class="nav-link" href="customerpresence.html">Customer Presence</a></li>
+            <li class="nav-item"><a class="nav-link" href="partners.html">Partners</a></li>
+            <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero-section text-center py-5">
+      <div class="hero-hex-bg"></div>
+      <div class="container py-4">
+        <span class="eyebrow d-block mb-2 text-uppercase fw-semibold tracking-wider text-muted">About VMX</span>
+        <h1 class="hero-h1 hero-h1-huge mb-4" id="heroHeading">
+          <span class="word-line">
+            <span class="reveal-word" data-delay="0">We Are VMX</span>
+          </span>
+          <br>
+          <span class="word-line">
+            <span class="reveal-word green" data-delay="0.25">Server Solutions</span>
+          </span>
+        </h1>
+      </div>
+    </section>
+
+    <section class="section py-5 bg-white border-top">
+      <div class="container py-4">
+        <div class="row align-items-center g-5">
+
+          <div class="col-lg-6" id="upgradeImg">
+            <div class="p-4 border rounded shadow-sm d-flex align-items-center justify-content-center"
+              style="min-height: 380px; background-color: #F8F9FA; border-radius: 24px !important;">
+              <svg width="260" height="200" viewBox="0 0 240 200" fill="none">
+                <rect x="20" y="30" width="200" height="130" rx="16" fill="#60A630" fill-opacity="0.05" stroke="#60A630"
+                  stroke-width="2" />
+                <circle cx="70" cy="95" r="24" fill="#60A630" fill-opacity="0.2" />
+                <circle cx="170" cy="95" r="24" fill="#6E7CF8" fill-opacity="0.2" />
+                <path d="M95 95h50" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="col-lg-6" id="upgradeText">
+            <h2 class="section-h mb-4 fs-1">We are VMX Server Solutions</h2>
+            <p class="text-muted mb-4 fs-6" style="line-height: 1.7;">Developed in 2021 as a byproduct of Green Cloud
+              Services' commitment to revolutionizing enterprise virtualization, VMX Server Solutions has since evolved
+              into a trusted leader in tailored virtualization solutions. The goal today is to deliver enterprise-grade
+              virtualization solutions and support services that are comprehensive, efficient, and scalable—solutions
+              designed to meet the evolving demands of modern IT environments.</p>
+            <a href="contact.html" class="btn btn-outline-dark px-4 py-2-5 rounded-3 fw-medium gsap-init"
+              style="font-size: 0.95rem; border-color: #D1D5DB;">Contact Us</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section py-5 border-top border-bottom" style="background-color: #FDFDFD;">
+      <div class="container py-4">
+        <div class="row g-4 justify-content-center">
+
+          <div class="col-sm-6 col-lg-3 text-start border-end border-light-subtle px-4 gsap-init">
+            <div class="metric-count-heading">
+              <span class="count-ticker" data-target="16">0</span><span class="plus-accent">+</span>
+            </div>
+            <h4 class="h6 fw-bold text-dark mb-3">Years of Experience</h4>
+            <p class="metric-desc-txt">We bring a wealth of experience honed through years of hands-on involvement,
+              continuous learning, and adaptation to evolving trends and challenges.</p>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 text-start border-end border-light-subtle px-4 gsap-init">
+            <div class="metric-count-heading">
+              <span class="count-ticker" data-target="12">0</span><span class="plus-accent"
+                style="color: var(--text-dark);">K</span>
+            </div>
+            <h4 class="h6 fw-bold text-dark mb-3">Projects completed</h4>
+            <p class="metric-desc-txt">From bustling metropolitan cities to remote rural communities, our commitment to
+              excellence and innovation has driven us to deliver exceptional results.</p>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 text-start border-end border-light-subtle px-4 gsap-init">
+            <div class="metric-count-heading">
+              <span class="count-ticker" data-target="196">0</span><span class="plus-accent">+</span>
+            </div>
+            <h4 class="h6 fw-bold text-dark mb-3">Awards achieved</h4>
+            <p class="metric-desc-txt">These accolades stand as a testament to our unwavering commitment to excellence,
+              innovation, and industry-leading performance framework configurations.</p>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 text-start px-4 gsap-init">
+            <div class="metric-count-heading">
+              <span class="count-ticker" data-target="55">0</span><span class="plus-accent">%</span>
+            </div>
+            <h4 class="h6 fw-bold text-dark mb-3">Returned of clients</h4>
+            <p class="metric-desc-txt">This statistic speaks volumes about the trust and satisfaction our clients have
+              in our services, reflecting multi-year hardware integration lifecycles.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section py-5 bg-white">
+      <div class="container py-4">
+        <div class="row g-5 align-items-center">
+
+          <div class="col-lg-7" id="simplicityText">
+            <h2 class="section-h mb-4 hero-h1" style="font-size: 4rem; font-weight: 800; line-height: 1.15;">
+              Precision-Built <span style="color: var(--green-primary);">Virtualization,</span> <br>No Distractions
+            </h2>
+            <p class="text-muted mb-0 fs-5" style="line-height: 1.7;">Ours is a mission to create the perfect enterprise
+              virtualization solutions. Our entire team is dedicated to making this dream a reality. Born from over a
+              decade of deep industry experience and years of development and testing, our debut product, VMX Version 1,
+              delivers on our vision with a powerful, efficient, and future-ready virtualization solution that is highly
+              scalable, intuitive, and comprehensive.</p>
+          </div>
+
+          <div class="col-lg-5" id="upgradeImg">
+            <div class="asymmetric-graphic-frame gsap-element-animate" data-animation="slide-in-right">
+              <svg class="opacity-10 absolute-center" width="160" height="160" viewBox="0 0 100 100">
+                <defs>
+                  <pattern id="hexGrid" width="14" height="24" patternUnits="userSpaceOnUse"
+                    patternTransform="scale(1)">
+                    <path d="M14 0L7 12L0 0" fill="none" stroke="#000" stroke-width="1.5" />
+                    <path d="M7 12L14 24L0 24" fill="none" stroke="#000" stroke-width="1.5" />
+                  </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#hexGrid)" />
+              </svg>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section py-4">
+      <div class="container">
+        <div class="cta-banner p-5 text-center text-white" id="ctaBanner"
+          style="background-color: var(--green-banner-bg); border-radius: 24px;">
+          <h2 class="text-white h1 fw-bold mb-3" style="font-family: 'Red Hat Display', sans-serif;">Join the Future of
+            Virtualization</h2>
+          <p class="mx-auto mb-4 text-white-50 fs-6" style="max-width: 650px; line-height: 1.6;">
+            See how VMX can transform your infrastructure. Book a free live demonstration pipeline session setup with
+            our deployment engineers.
+          </p>
+          <a href="contact.html" class="btn btn-light px-5 py-3 fw-bold text-dark rounded-3 border-0 shadow-sm"
+            style="background-color: #FFFFFF; font-size: 0.95rem;">Book a Free Demo</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-white text-secondary py-5 border-top mt-5">
+    <div class="container py-4">
+      <div class="row g-5 border-bottom pb-5 mb-4">
+        <div class="col-lg-4">
+          <div class="mb-5">
+            <img src="images/vmx/vmx-removebg-preview.webp" class="brand-logo" style="width: 90px;" alt="VMX Logo">
+          </div>
+          <div class="d-flex gap-3 fs-5 mb-4">
+            <a href="#" class="text-secondary text-decoration-none">𝕏</a>
+            <a href="#" class="text-secondary text-decoration-none">in</a>
+          </div>
+          <div class="mt-4 d-flex gap-2">
+            <input type="email" placeholder="Subscribe to our newsletter" class="form-control form-control-sm"
+              style="max-width:240px; background:#F0F2F5; border-color:#E2E5E9; color:#333">
+            <button class="btn btn-sm btn-dark px-4 fw-semibold" style="background: #0F1115;">Subscribe</button>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-2">
+          <h4 class="h6 text-dark fw-bold mb-3">Quick Links</h4>
+          <ul class="list-unstyled d-flex flex-column gap-2 footer-links small">
+            <li><a href="index.html" class="text-secondary text-decoration-none">Home</a></li>
+            <li><a href="products.html" class="text-secondary text-decoration-none">Products</a></li>
+            <li><a href="support.html" class="text-secondary text-decoration-none">Support</a></li>
+            <li><a href="contact.html" class="text-secondary text-decoration-none">Contact</a></li>
+            <li><a href="about.html" class="text-secondary text-decoration-none">About</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <h4 class="h6 text-dark fw-bold mb-3">Contact</h4>
+          <ul class="list-unstyled d-flex flex-column gap-2 small text-muted">
+            <li><strong class="text-dark">Address:</strong> Green Cloud Services LLC 2719 Hollywood Blvd, FL 33020, USA</li>
+            <li><strong class="text-dark">Email:</strong> support@greencloud.live</li>
+            <li><strong class="text-dark">Phone:</strong> Toll-Free: (844)220-2204</li>
+            <li><strong class="text-dark">Work Hour:</strong> 07:00 – 14:00 EST (Mon–Sat)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center text-muted" style="font-size:0.8rem">
+        <span>&copy; 2025 , All Rights Reserved</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    function buildScrollReveal() {
+      document.querySelectorAll('.scroll-reveal').forEach(line => {
+        const words = line.dataset.words.split(',');
+        const delays = (line.dataset.delays || '').split(',').map(Number);
+        const colors = (line.dataset.colors || '').split(',');
+        line.innerHTML = '';
+        words.forEach((word, i) => {
+          const span = document.createElement('span');
+          span.className = 'reveal-word';
+          if (colors[i] === 'green') span.classList.add('green');
+          if (colors[i] === 'dim') span.classList.add('dim');
+          span.textContent = word + ' ';
+          span.dataset.delay = delays[i] || 0;
+          line.appendChild(span);
+        });
+      });
+    }
+    buildScrollReveal();
+
+    const heroWords = document.querySelectorAll('.hero-h1 .reveal-word');
+    gsap.set(heroWords, { opacity: 0, y: '110%' });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const tl = gsap.timeline({ delay: 0.15 });
+      heroWords.forEach(w => {
+        tl.to(w, {
+          opacity: 1, y: '0%',
+          duration: 0.8,
+          ease: 'power4.out'
+        }, parseFloat(w.dataset.delay));
+      });
+      tl.to('.hero-sub', { opacity: 1, y: 0, duration: 0.65, ease: 'power2.out' }, 0.45);
+      gsap.set('.hero-sub', { y: 30 });
+    });
+
+    // ─── ADVANCED GSAP SCROLL-TRIGGER NUMERIC TICKER ENGINE ───
+    function initMetricTickers() {
+      gsap.utils.toArray('.count-ticker').forEach(ticker => {
+        const endValue = parseInt(ticker.getAttribute('data-target'), 10);
+
+        gsap.fromTo(ticker,
+          { textContent: 0, opacity: 0 },
+          {
+            textContent: endValue,
+            opacity: 1,
+            duration: 2,
+            ease: "power2.out",
+            snap: { textContent: 1 }, // Steps incrementally by 1 integer
+            scrollTrigger: {
+              trigger: ticker,
+              start: "top 85%",
+              toggleActions: "play none none none"
+            },
+            onUpdate: function () {
+              // Optional: format inner tracking context values during transition loop
+            }
+          }
+        );
+      });
+    }
+    initMetricTickers();
+
+    gsap.utils.toArray('.gsap-init, .metric-desc-txt').forEach((el, i) => {
+      gsap.set(el, { opacity: 0, y: 35 });
+      ScrollTrigger.create({
+        trigger: el,
+        start: 'top 88%',
+        onEnter: () => {
+          gsap.to(el, {
+            opacity: 1, y: 0,
+            duration: 0.6,
+            delay: (i % 4) * 0.08,
+            ease: 'power2.out'
+          });
+        }
+      });
+    });
+
+    gsap.set('#upgradeImg', { opacity: 0, x: -40 });
+    ScrollTrigger.create({
+      trigger: '#upgradeText',
+      start: 'top 75%',
+      onEnter: () => {
+        gsap.to('#upgradeImg', { opacity: 1, x: 0, duration: 0.85, ease: 'power3.out' });
+      }
+    });
+
+    const scrollBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+      scrollBtn.classList.toggle('visible', window.scrollY > 400);
+    });
+  </script>
+</body>
+
+</html>

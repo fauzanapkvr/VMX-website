@@ -1,0 +1,846 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VMX — Transforming Infrastructure. Driving Results.</title>
+  <meta name="description" content="Enterprise-grade virtualization without the complexity or cost barriers." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Red+Hat+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Blue pill decoration -->
+  <div class="blue-pill"></div>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top-btn" id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+
+  <!-- ── HEADER ─────────────────────────── -->
+  <header class="site-header sticky-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg py-3">
+        <img src="images/vmx/vmx-removebg-preview.webp" class="brand-logo w-12" alt="VMX Logo">
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-2 gap-lg-3 mt-3 mt-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="products.html">Product</a></li>
+            <li class="nav-item"><a class="nav-link" href="howitworks.html">How it Works</a></li>
+            <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="support.html">Support</a></li>
+            <li class="nav-item"><a class="nav-link" href="customerpresence.html">Customer Presence</a></li>
+            <li class="nav-item"><a class="nav-link" href="partners.html">Partners</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── HERO ─────────────────────────────── -->
+    <section class="hero-section">
+      <div class="hero-hex-bg"></div>
+      <div class="container text-center py-5">
+        <h1 class="hero-h1 mb-4 " id="heroHeading">
+          <span class="word-line">
+            <span class="reveal-word" data-delay="0">Transforming Infrastructure.</span>
+
+          </span>
+          <span class="word-line">
+            <span class="reveal-word green" data-delay="0.22">Driving results.</span>
+
+          </span>
+        </h1>
+        <p class="hero-lead mx-auto mb-5 gsap-init" id="heroLead">
+          All the power, control, and scalability of enterprise virtualization with none of the complexities or cost
+          barriers.
+        </p>
+        <div class="d-flex justify-content-center gap-3 gsap-init" id="heroCtas">
+          <a href="contact.html" class="btn btn-primary px-4 py-3">Request a Demo</a>
+          <a href="products.html" class="btn btn-outline-secondary px-4 py-3">Explore Features</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── UPGRADE ───────────────────────────── -->
+    <section class="section py-5">
+      <div class="container py-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6" id="upgradeText">
+            <h2 class="section-h mb-4">
+              <span class="word-line scroll-reveal" data-words="Give Your" data-delays="0,0.08"></span>
+              <span class="word-line scroll-reveal" data-words="Infrastructure" data-delays="0.18"></span>
+              <span class="word-line scroll-reveal" data-words="an Upgrade" data-delays="0.28,0.36"></span>
+            </h2>
+            <p class="text-muted mb-3">Modernize your IT environment to deliver greater performance, tighter security,
+              and lower operational costs with the VMX enterprise virtualization solution.</p>
+            <p class="text-muted mb-4">Whether you're looking to consolidate servers, support remote teams, or prepare
+              for future growth, VMX gives you the flexibility to adapt and scale—without complexity and high costs of
+              building new systems from scratch.</p>
+          </div>
+          <div class="col-lg-6" id="upgradeImg">
+
+            <div class="upgrade-img" style="border:2px solid #ddd; border-radius:18px">
+              <img src="images/vmx/index-1.jpeg" alt="Infrastructure upgrade"
+                style="width:100%; height:280px; object-fit:cover; border-radius:16px">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── GREEN CLOUD WAY ───────────────────── -->
+    <section class="section-soft py-5">
+      <div class="container py-4">
+        <div class="text-center mx-auto mb-5 max-w-700" id="wayHead">
+          <h2 class="section-h mb-3">
+            <span class="word-line scroll-reveal" data-words="Enterprise Virtualization," data-delays="0,0.09"></span>
+            <span class="word-line scroll-reveal" data-words="the Green Cloud Way."
+              data-delays="0.2,0.28,0.36,0.44"></span>
+          </h2>
+          <p class="text-muted mt-3">Comprehensive, user-friendly design. Clean architecture. Powerful
+            infrastructure—engineered for simplicity, built to scale, and designed to meet the evolving needs of the
+            modern IT environment.</p>
+        </div>
+        <div class="row g-4" id="wayCards">
+          <div class="col-md-6 col-lg-3">
+            <div class="way-card gsap-init">
+              <div class="card-icon mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                  <path d="M2 17l10 5 10-5" />
+                  <path d="M2 12l10 5 10-5" />
+                </svg>
+              </div>
+              <h3 class="h5 mb-2">Full Enterprise Solution</h3>
+              <p class="text-muted small mb-0">From startups to global enterprises—all the enterprise-grade capabilities
+                you need.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="way-card gsap-init">
+              <div class="card-icon mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <path d="M9 3v18M15 3v18M3 9h18M3 15h18" />
+                </svg>
+              </div>
+              <h3 class="h5 mb-2">Clean Design Architecture</h3>
+              <p class="text-muted small mb-0">Designed for easy maintenance, consistent performance, and long-term
+                reliability.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="way-card gsap-init">
+              <div class="card-icon mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                </svg>
+              </div>
+              <h3 class="h5 mb-2">Built for Future Growth</h3>
+              <p class="text-muted small mb-0">Scalable. Adaptable. Sustainable. Virtualization that grows with your
+                business.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="way-card gsap-init">
+              <div class="card-icon mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+                  <path
+                    d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+                </svg>
+              </div>
+              <h3 class="h5 mb-2">Unparalleled Support 24/7</h3>
+              <p class="text-muted small mb-0">All the technical support you need, when you need it. 24 hours a day, 7
+                days a week.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ONE SOLUTION ──────────────────────── -->
+    <section class="section py-5">
+      <div class="container py-4">
+        <div class="text-center mx-auto mb-5" style="max-width:820px" id="limitlessHead">
+          <h2 class="section-h mb-3">
+            <span class="word-line scroll-reveal" data-words="One Solution." data-delays="0,0.09"></span>
+            <span class="word-line scroll-reveal" data-words="Limitless Application." data-delays="0.2,0.29"></span>
+          </h2>
+          <p class="text-muted mt-3">There is no one-size-fits-all solution to enterprise virtualization, but somehow,
+            we have been able to create one tool to meet every use case. From virtual machine cloning to
+            multi-environment orchestration, nested virtualization, and seamless workload migration, you've got all the
+            features your business needs, neatly packaged in one clean, user-friendly system.</p>
+          <p class="mt-3 fw-semibold">All the Features You Need</p>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4" id="featGrid">
+          <!-- Feature cards -->
+          <div class="col">
+            <div class="feat-card gsap-init">
+              <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <path d="M8 21h8M12 17v4" />
+                </svg></div>
+              <h3>Basic Virtualization</h3>
+              <p>Create and manage virtual machines on physical hardware.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feat-card gsap-init">
+              <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M8 17l4-4 4 4M12 13V3" />
+                  <rect x="2" y="17" width="20" height="4" rx="1" />
+                </svg></div>
+              <h3>VM Cloning</h3>
+              <p>Instantly duplicate existing VMs for testing or deployment.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feat-card gsap-init">
+              <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                  <polyline points="9,22 9,12 15,12 15,22" />
+                </svg></div>
+              <h3>Nested Virtualization</h3>
+              <p>Run virtual machines inside other virtual machines.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feat-card gsap-init">
+              <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg></div>
+              <h3>Live VM Migration</h3>
+              <p>Move running VMs between hosts without downtime.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feat-card gsap-init">
+              <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 8v4l3 3" />
+                </svg></div>
+              <h3>Live Storage Migration</h3>
+              <p>Transfer VM storage while machines stay running.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feat-card gsap-init">
+              <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="17,8 12,3 7,8" />
+                  <line x1="12" y1="3" x2="12" y2="15" />
+                </svg></div>
+              <h3>VMX Replication</h3>
+              <p>Replicate VMs for disaster recovery.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feat-card gsap-init">
+              <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="13,2 3,14 12,14 11,22 21,10 12,10" />
+                </svg></div>
+              <h3>Native Performance</h3>
+              <p>Achieve near-bare-metal performance with minimal overhead.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feat-card gsap-init">
+              <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18" />
+                </svg></div>
+              <h3>Hotplugging</h3>
+              <p>Add/remove hardware components without VM shutdown.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feat-card gsap-init">
+              <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="8" rx="2" />
+                  <rect x="2" y="14" width="20" height="8" rx="2" />
+                  <line x1="6" y1="6" x2="6" y2="6" />
+                  <line x1="6" y1="18" x2="6" y2="18" />
+                </svg></div>
+              <h3>iSCSI &amp; FC Support</h3>
+              <p>Connect to enterprise storage via iSCSI and Fibre Channel.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feat-card gsap-init">
+              <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                </svg></div>
+              <h3>Local Disks, LVM, NFS</h3>
+              <p>Use local drives, LVM, and NFS storage backends.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feat-card gsap-init">
+              <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg></div>
+              <h3>nBalance WAF Support</h3>
+              <p>Integrate with nBalance Web Application Firewall.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feat-card gsap-init">
+              <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  <path d="M9 12l2 2 4-4" />
+                </svg></div>
+              <h3>Immutable backup Support</h3>
+              <p>Tamper-proof backups powered by G-Immute technology.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feat-card gsap-init">
+              <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M1 6s4-2 11-2 11 2 11 2M1 12s4-2 11-2 11 2 11 2M1 18s4-2 11-2 11 2 11 2" />
+                </svg></div>
+              <h3>VM Monitoring Alerts</h3>
+              <p>Automated notifications for VM performance and health.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SUPPORT ────────────────────────────── -->
+    <section class="section-soft py-5">
+      <div class="container py-4">
+        <div class="text-center mx-auto mb-5" style="max-width:820px" id="supportHead">
+          <h2 class="section-h mb-3">
+            <span class="word-line scroll-reveal" data-words="Round-the-Clock" data-delays="0,0.09,0.18"></span>
+            <span class="word-line scroll-reveal" data-words="Virtualization Support" data-delays="0.28,0.37"
+              data-colors=",green"></span>
+          </h2>
+          <p class="text-muted mt-3">Your virtualization solution is only as good as the maintenance and support
+            services that keep things running smoothly. We offer round-the-clock, enterprise-grade security, monitoring,
+            and management services to ensure that your system remains optimized, secured, and running smoothly.</p>
+        </div>
+        <div class="row g-5 align-items-start" id="supportContent">
+          <div class="col-lg-5">
+
+            <div class="support-list-item active" data-image="images/vmx/img-1.webp">
+              <span class="s-num">1. Third-Party Integration Support</span>
+              <h4>Connect external applications</h4>
+              <p>Connect and integrate with external applications and services.</p>
+            </div>
+
+            <div class="support-list-item" data-image="images/vmx/img-2.webp">
+              <span class="s-num">2. System Health Monitoring</span>
+              <h4>Track performance</h4>
+              <p>Track overall system performance and infrastructure status.</p>
+            </div>
+
+            <div class="support-list-item" data-image="images/vmx/img-3.webp">
+              <span class="s-num">3. Patch Management & Updates</span>
+              <h4>Automated security patches</h4>
+              <p>Automated security patches and system updates.</p>
+            </div>
+
+            <div class="support-list-item" data-image="images/vmx/img-4.webp">
+              <span class="s-num">4. Performance Optimization</span>
+              <h4>Fine-tune resources</h4>
+              <p>Fine-tune system resources for maximum efficiency.</p>
+            </div>
+
+            <div class="support-list-item" data-image="images/vmx/img-5.webp">
+              <span class="s-num">5. Configuration Support</span>
+              <h4>Setup & Customization</h4>
+              <p>Assistance with system setup and customization.</p>
+            </div>
+
+            <div class="support-list-item" data-image="images/vmx/img-6.webp">
+              <span class="s-num">6. Training & Enablement</span>
+              <h4>User Education</h4>
+              <p>User education and skill development programs.</p>
+            </div>
+
+          </div>
+          <div class="col-lg-7">
+
+            <div class="text-center">
+
+              <div class="support-img-wrap text-center">
+                <img id="supportImage" src="images/vmx/img-1.webp" alt="Support" class="img-fluid rounded">
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PRICING ────────────────────────────── -->
+    <section class="section py-5">
+      <div class="container py-4">
+        <div class="text-center mx-auto mb-5" style="max-width:840px" id="pricingHead">
+          <h2 class="section-h mb-3">
+            <span class="word-line scroll-reveal" data-words="Flexible Plans" data-delays="0,0.09"
+              data-colors=",green"></span>
+            <span class="word-line scroll-reveal" data-words="for Every Team" data-delays="0.2,0.29,0.38"
+              data-colors=",,dim"></span>
+          </h2>
+          <p class="text-muted mt-3">VMX is enterprise virtualization made affordable. Whether you're just getting
+            started or managing complex multi-site infrastructure, our subscription models are built to scale with you.
+          </p>
+        </div>
+        <div class="row g-4 justify-content-center" id="pricingCards">
+          <div class="col-md-6 col-lg-4">
+            <div class="price-card gsap-init">
+              <div class="tier">Core</div>
+              <p class="text-muted small mb-4">Essentialise your brand presence with our Essential Package</p>
+
+              <hr>
+              <a href="pricing.html" class="btn btn-outline-secondary w-100 py-3 mt-2">Get Started Now →</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="price-card featured gsap-init">
+              <div class="tier">Business</div>
+              <p class="mb-4" style="color:rgba(255,255,255,0.7);font-size:0.875rem">Unlock your brand's potential with
+                our Standard Package</p>
+
+              <hr style="border-color:rgba(255,255,255,0.3)">
+              <a href="pricing.html" class="btn btn-light w-100 py-3 mt-2 fw-semibold"
+                style="color:var(--green-primary)">Get Started Now →</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="price-card gsap-init">
+              <div class="tier">Enterprise</div>
+              <p class="text-muted small mb-4">The pinnacle of creativity &amp; performance with our Premium Package</p>
+
+              <hr>
+              <a href="pricing.html" class="btn btn-outline-secondary w-100 py-3 mt-2">Get Started Now →</a>
+            </div>
+          </div>
+        </div>
+        <p class="text-center price-note mt-4">You have a large team? <a href="contact.html"
+            class="text-decoration-none" style="color:var(--green-primary)">Contact us</a> for information about more
+          enterprise options.</p>
+      </div>
+    </section>
+
+    <!-- ── STATS (SCATTERED) ──────────────────── -->
+    <section class="section-soft stats-scatter-section py-5">
+      <div class="container py-4">
+        <div class="text-center mb-2" id="statsHead">
+          <h2 class="section-h">
+            <span class="word-line scroll-reveal" data-words="A journey of innovation"
+              data-delays="0,0.07,0.14,0.21"></span>
+            <span class="word-line scroll-reveal" data-words="and success" data-delays="0.3,0.37"></span>
+          </h2>
+        </div>
+        <div class="scatter-wrap" id="scatterWrap">
+          <!-- World ring decoration -->
+          <svg class="scatter-bg-rings" width="600" height="400" viewBox="0 0 600 400">
+            <circle cx="300" cy="200" r="180" stroke-dasharray="4 10" />
+            <circle cx="300" cy="200" r="130" stroke-dasharray="4 10" />
+            <circle cx="300" cy="200" r="80" stroke-dasharray="4 10" />
+          </svg>
+          <!-- Scatter cards -->
+          <div class="scard scard-1 gsap-init">
+            <div class="s-icon">𝕏</div>
+            <div class="s-num">18k+</div>
+            <div class="s-label">Code Commit</div>
+          </div>
+          <div class="scard scard-2 gsap-init">
+            <div class="s-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M9 12l2 2 4-4" />
+              </svg>
+            </div>
+            <div class="s-num">9k+</div>
+            <div class="s-label">Projects Completed</div>
+          </div>
+          <div class="scard scard-3 gsap-init">
+            <div class="s-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <div class="s-num">126+</div>
+            <div class="s-label">Awards Achieved</div>
+          </div>
+          <div class="scard scard-4 gsap-init">
+            <div class="s-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <path d="M8 21h8M12 17v4" />
+              </svg>
+            </div>
+            <div class="s-num">20k+</div>
+            <div class="s-label">Users Monthly</div>
+          </div>
+          <div class="scard scard-5 gsap-init">
+            <div class="s-icon">in</div>
+            <div class="s-num">1B+</div>
+            <div class="s-label">Requests Served</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TESTIMONIALS ───────────────────────── -->
+    <section class="section py-5">
+      <div class="container py-4">
+        <div class="text-center mb-5" id="testiHead">
+          <h2 class="section-h">
+            <span class="word-line scroll-reveal" data-words="Loved by developers" data-delays="0,0.08,0.16"></span>
+            <span class="word-line scroll-reveal" data-words="like you" data-delays="0.26,0.33"></span>
+          </h2>
+        </div>
+        <div class="row g-4" id="testiGrid">
+          <!-- Left col: 2 stacked testimonials -->
+          <div class="col-lg-5 d-flex flex-column gap-4">
+            <div class="testi-card gsap-init">
+              <p class="quote">"I feels like the first time I booted my computer with an SSD. It's so much faster and
+                simpler that it changed how I do things, feels like the first time I booted my computer with an SSD.
+                It's so much faster and simpler that it changed how I do things."</p>
+              <div class="reviewer">
+                <div class="avatar">D</div>
+                <div>
+                  <span class="testi-name">David Chen</span>
+                  <span class="testi-role">CEO / BaseHub</span>
+                </div>
+              </div>
+            </div>
+            <div class="testi-card gsap-init">
+              <p class="quote">"After spending many hours on auth issues that seemed simple (but were not), we moved to
+                and all that burden was lifted. We kind of wish we'd made that decision earlier."</p>
+              <div class="reviewer">
+                <div class="avatar">C</div>
+                <div>
+                  <span class="testi-name">Chris Phan</span>
+                  <span class="testi-role">CEO / GitHub</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Middle: Clutch badge -->
+          <div class="col-lg-2 d-flex">
+            <div class="clutch-card w-100 gsap-init">
+              <div class="clutch-logo">Clutch</div>
+              <div class="clutch-ring">4.9</div>
+              <div class="stars">★★★★★</div>
+              <div class="clutch-sub">Based on 24 reviews</div>
+            </div>
+          </div>
+          <!-- Right col: 2 stacked testimonials -->
+          <div class="col-lg-5 d-flex flex-column gap-4">
+            <div class="testi-card gsap-init">
+              <p class="quote">"We tried them all, no other software beats Tecko. We redesigned our feedback loop to
+                extract concrete customer insights in no time with the autopilot feature. It's a no-brainer for any
+                product team."</p>
+              <div class="reviewer">
+                <div class="avatar">M</div>
+                <div>
+                  <span class="testi-name">MoxiGaming</span>
+                  <span class="testi-role">CEO / Taskfun</span>
+                </div>
+              </div>
+            </div>
+            <div class="testi-card gsap-init">
+              <p class="quote">"Tecko has revolutionized how I manage my finances. From paying bills effortlessly to
+                ensuring I get paid on time, it's become an indispensable tool for my business. Highly recommended!"</p>
+              <div class="reviewer">
+                <div class="avatar">D</div>
+                <div>
+                  <span class="testi-name">Dev Nguyen</span>
+                  <span class="testi-role">CEO / Slice</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ───────────────────────────────── -->
+    <section class="section-soft py-5">
+      <div class="container py-4">
+        <div class="text-center mx-auto mb-5" style="max-width:640px" id="faqHead">
+          <h2 class="section-h">
+            <span class="word-line scroll-reveal" data-words="Frequently asked" data-delays="0,0.09"></span>
+            <span class="word-line scroll-reveal" data-words="questions" data-delays="0.2"></span>
+          </h2>
+        </div>
+        <div class="row justify-content-center" id="faqAccordionWrap">
+          <div class="col-lg-8">
+            <div class="accordion accordion-flush" id="faqAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed py-3 px-4 fw-semibold" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                    How experienced is your team?
+                  </button>
+                </h3>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body p-4 pt-0 text-muted small">Our team is highly experienced, with each member
+                    bringing a diverse range of skills and knowledge acquired through years of dedicated work.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed py-3 px-4 fw-semibold" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                    What sets VMX apart from others?
+                  </button>
+                </h3>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body p-4 pt-0 text-muted small">VMX combines enterprise-grade capability with a
+                    clean, simple architecture. No bloated stacks—just one powerful platform.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed py-3 px-4 fw-semibold" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                    How do you handle project timelines and deadlines?
+                  </button>
+                </h3>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body p-4 pt-0 text-muted small">We follow structured milestone management plans
+                    tracking targets smoothly step-by-step.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ───────────────────────────────── -->
+    <section class="section py-5">
+      <div class="container py-4">
+        <div class="cta-banner p-5 text-center text-white" id="ctaBanner">
+          <h2 class="text-white mb-3">Experience the Future <br>of Virtual Infrastructure</h2>
+          <p style="color:rgba(255,255,255,0.6);max-width:540px;margin:0 auto 2rem">See firsthand how our virtualization
+            solution can transform your business. Book a free demo today.</p>
+          <a href="contact.html" class="btn btn-light text-dark px-4 py-3 fw-semibold">Book a Demo</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ────────────────────────────── -->
+  <footer class="bg-white text-secondary py-5 border-top mt-5">
+    <div class="container py-4">
+      <div class="row g-5 border-bottom pb-5 mb-4">
+        <div class="col-lg-4">
+          <div class="mb-5">
+            <img src="images/vmx/vmx-removebg-preview.webp" class="brand-logo" style="width: 90px;" alt="VMX Logo">
+          </div>
+          <div class="d-flex gap-3 fs-5 mb-4">
+            <a href="#" class="text-secondary text-decoration-none">𝕏</a>
+            <a href="#" class="text-secondary text-decoration-none">in</a>
+          </div>
+          <div class="mt-4 d-flex gap-2">
+            <input type="email" placeholder="Subscribe to our newsletter" class="form-control form-control-sm"
+              style="max-width:240px; background:#F0F2F5; border-color:#E2E5E9; color:#333">
+            <button class="btn btn-sm btn-dark px-4 fw-semibold" style="background: #0F1115;">Subscribe</button>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-2">
+          <h4 class="h6 text-dark fw-bold mb-3">Quick Links</h4>
+          <ul class="list-unstyled d-flex flex-column gap-2 footer-links small">
+            <li><a href="index.html" class="text-secondary text-decoration-none">Home</a></li>
+            <li><a href="products.html" class="text-secondary text-decoration-none">Products</a></li>
+            <li><a href="support.html" class="text-secondary text-decoration-none">Support</a></li>
+            <li><a href="contact.html" class="text-secondary text-decoration-none">Contact</a></li>
+            <li><a href="about.html" class="text-secondary text-decoration-none">About</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <h4 class="h6 text-dark fw-bold mb-3">Contact</h4>
+          <ul class="list-unstyled d-flex flex-column gap-2 small text-muted">
+            <li><strong class="text-dark">Address:</strong> Green Cloud Services LLC 2719 Hollywood Blvd, FL 33020, USA</li>
+            <li><strong class="text-dark">Email:</strong> support@greencloud.live</li>
+            <li><strong class="text-dark">Phone:</strong> Toll-Free: (844)220-2204</li>
+            <li><strong class="text-dark">Work Hour:</strong> 07:00 – 14:00 EST (Mon–Sat)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center text-muted" style="font-size:0.8rem">
+        <span>&copy; 2025 , All Rights Reserved</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    /* ─── UTILITY: build word spans inside .scroll-reveal elements ─── */
+    function buildScrollReveal() {
+      document.querySelectorAll('.scroll-reveal').forEach(line => {
+        const words = line.dataset.words.split(',');
+        const delays = (line.dataset.delays || '').split(',').map(Number);
+        const colors = (line.dataset.colors || '').split(',');
+        line.innerHTML = '';
+        words.forEach((word, i) => {
+          const span = document.createElement('span');
+          span.className = 'reveal-word';
+          if (colors[i] === 'green') span.classList.add('green');
+          if (colors[i] === 'dim') span.classList.add('dim');
+          span.textContent = word + ' ';
+          span.dataset.delay = delays[i] || 0;
+          line.appendChild(span);
+        });
+      });
+    }
+    buildScrollReveal();
+
+    /* ─── HERO ANIMATION ─── */
+    const heroWords = document.querySelectorAll('#heroHeading .reveal-word');
+    gsap.set(heroWords, { opacity: 0, y: '110%' });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const tl = gsap.timeline({ delay: 0.2 });
+      heroWords.forEach(w => {
+        tl.to(w, {
+          opacity: 1, y: '0%',
+          duration: 0.75,
+          ease: 'power3.out'
+        }, parseFloat(w.dataset.delay));
+      });
+
+      tl.to('#heroLead', { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out' }, 0.55);
+      tl.to('#heroCtas', { opacity: 1, y: 0, duration: 0.5, ease: 'power2.out' }, 0.7);
+      gsap.set(['#heroLead', '#heroCtas'], { y: 24 });
+    });
+
+    /* ─── GENERIC SCROLL WORD REVEAL ─── */
+    function registerWordReveal(headingEl) {
+      if (!headingEl) return;
+      const words = headingEl.querySelectorAll('.reveal-word');
+      if (!words.length) return;
+      ScrollTrigger.create({
+        trigger: headingEl,
+        start: 'top 82%',
+        onEnter: () => {
+          words.forEach(w => {
+            gsap.to(w, {
+              opacity: 1, y: '0%',
+              duration: 0.8,
+              delay: parseFloat(w.dataset.delay) || 0,
+              ease: 'power3.out'
+            });
+          });
+        }
+      });
+    }
+
+    // Register all section headings
+    document.querySelectorAll('[id$="Head"], [id$="Text"]').forEach(el => {
+      registerWordReveal(el.querySelector('h2') || el);
+    });
+
+    /* ─── GSAP-INIT FADE-UP ─── */
+    gsap.utils.toArray('.gsap-init').forEach((el, i) => {
+      gsap.set(el, { opacity: 0, y: 36 });
+      ScrollTrigger.create({
+        trigger: el,
+        start: 'top 88%',
+        onEnter: () => {
+          gsap.to(el, {
+            opacity: 1, y: 0,
+            duration: 0.65,
+            delay: (i % 4) * 0.08,
+            ease: 'power2.out'
+          });
+        }
+      });
+    });
+
+    /* ─── UPGRADE SECTION ─── */
+    gsap.set('#upgradeImg', { opacity: 0, x: 50 });
+    ScrollTrigger.create({
+      trigger: '#upgradeText',
+      start: 'top 75%',
+      onEnter: () => {
+        gsap.to('#upgradeImg', { opacity: 1, x: 0, duration: 1, ease: 'power3.out' });
+      }
+    });
+
+    /* ─── SUPPORT SIDEBAR INTERACTION ─── */
+    const supportItems = document.querySelectorAll('.support-list-item');
+    supportItems.forEach(item => {
+      item.addEventListener('click', () => {
+        supportItems.forEach(s => s.classList.remove('active'));
+        item.classList.add('active');
+      });
+    });
+
+    /* ─── SCATTER CARDS STAGGER ─── */
+    ScrollTrigger.create({
+      trigger: '#scatterWrap',
+      start: 'top 75%',
+      onEnter: () => {
+        gsap.to('.scard', {
+          opacity: 1, y: 0, scale: 1,
+          stagger: 0.12,
+          duration: 0.7,
+          ease: 'back.out(1.4)'
+        });
+      }
+    });
+    gsap.set('.scard', { opacity: 0, y: 30, scale: 0.9 });
+
+    /* ─── SCROLL-TO-TOP BUTTON ─── */
+    const scrollBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+      scrollBtn.classList.toggle('visible', window.scrollY > 400);
+    });
+
+
+    document.querySelectorAll(".support-list-item").forEach(item => {
+      item.addEventListener("click", function () {
+
+        document.querySelectorAll(".support-list-item").forEach(el => {
+          el.classList.remove("active");
+        });
+
+        this.classList.add("active");
+
+        document.getElementById("supportImage").src =
+          this.dataset.image;
+      });
+    });
+  </script>
+</body>
+
+</html>
